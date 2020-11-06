@@ -66,10 +66,10 @@
 ;;              (message "I sent: %S" (assoc-default 'args data))))
 ;;  )
 
+;;; Code:
 
 (defun get-string-from-file (filePath)
-  "Return filePath's file content.
-   Shamelessly copied from http://ergoemacs.org/emacs/elisp_read_file_content.html"
+  "Return file content from FILEPATH."
   (with-temp-buffer
     (insert-file-contents filePath)
     (string-trim (buffer-string))))
@@ -102,3 +102,4 @@
              (slash-cmd sexp))
            )))
     ))
+  "Takes a configuration PLIST and produces a function."
