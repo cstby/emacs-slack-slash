@@ -41,7 +41,6 @@
 ;;                  :external-url "your-external-url"
 ;;                  )
 
-
 ;; (require 'web)
 
 ;; must have clj-cmd-token in .emacs or .spacemacs
@@ -51,7 +50,6 @@
 ;;                  :token "TODKEN"
 ;;                  :external-url "URL"
 ;;                  )
-
 
 ;; (request
 ;;  "https://subs.swingeducation.com/clj"
