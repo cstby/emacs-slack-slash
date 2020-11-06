@@ -69,7 +69,6 @@
 ;;  )
 
 
-;;;###autoload
 (defun get-string-from-file (filePath)
   "Return filePath's file content.
    Shamelessly copied from http://ergoemacs.org/emacs/elisp_read_file_content.html"
@@ -77,7 +76,6 @@
     (insert-file-contents filePath)
     (string-trim (buffer-string))))
 
-;;;###autoload
 (defmacro clj-slack-setup (&rest plist)
   (let ((fun-name (plist-get plist :fun-name))
         (command (plist-get plist :command))
