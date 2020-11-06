@@ -67,6 +67,7 @@
 ;;  )
 
 ;;; Code:
+(require 'eval-sexp-fu)
 
 (defun get-string-from-file (filePath)
   "Return file content from FILEPATH."
