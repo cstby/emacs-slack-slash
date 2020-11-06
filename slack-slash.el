@@ -103,3 +103,5 @@
            )))
     ))
   "Takes a configuration PLIST and produces a function."
+(provide 'slack-slash)
+;;; slack-slash.el ends here
