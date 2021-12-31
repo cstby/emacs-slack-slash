@@ -111,3 +111,14 @@
 
 (provide 'slack-slash)
 ;;; slack-slash.el ends here
+
+(defun manual-flash (n)
+  "Manual Flash"
+  (interactive "P")
+  (message "flashed!"))
+
+(define-eval-sexp-fu-flash-command manual-flash
+	(eval-sexp-fu-flash (save-excursion
+												(end-of-defun)
+												(beginning-of-defun)
+												(bounds-of-thing-at-point 'sexp))))
