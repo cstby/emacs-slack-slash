@@ -26,3 +26,5 @@ In your .spacmacs' `dotspacemacs/user-config` function, add the following:
 ```lisp
 (define-key evil-normal-state-map ",nf" 'my-clj-fun)
 ```
+
+update
